@@ -1,0 +1,615 @@
+[
+  {
+    "file": "audit_canonical_model_outputs_v2_20260611.py",
+    "sha256": "1232ec6f166c0e2a833f39018cb3cd7336f1e9b08219a22792c0a179c70d099f",
+    "imports": [
+      "from __future__ import annotations",
+      "from dataclasses import dataclass",
+      "from pathlib import Path",
+      "import numpy as np",
+      "import pandas as pd"
+    ]
+  },
+  {
+    "file": "build_paper_result_tables.py",
+    "sha256": "d310e10213137daa8251391025b6c02e27eaf67e58c52d428dd92ece05ca87cb",
+    "imports": [
+      "from pathlib import Path",
+      "import pandas as pd"
+    ]
+  },
+  {
+    "file": "build_section5_applied_energy_style_figures.py",
+    "sha256": "9582913a2c879767b5d9f36fdf63322b520385ea339d4c3c2e0b063872ff0887",
+    "imports": [
+      "from __future__ import annotations",
+      "from c43_budget_aware_boundary_correction import build_alerts, prepare_scores",
+      "from c46_validation_safe_modern_complement_selection import PRED",
+      "from c49_pressure_transfer_safe_candidate_selection import candidate_alert",
+      "from c77_stress_gated_deep_boundary_enhancement import (",
+      "from pathlib import Path",
+      "import matplotlib.pyplot as plt",
+      "import numpy as np",
+      "import pandas as pd",
+      "import sys"
+    ]
+  },
+  {
+    "file": "build_section5_diverse_evidence_figures.py",
+    "sha256": "c6e29a40aeb72c6e92f6cd0b2b0f105a30d8de7b102989a3e360ef1f9f8e1fb2",
+    "imports": [
+      "from __future__ import annotations",
+      "from c43_budget_aware_boundary_correction import build_alerts, prepare_scores",
+      "from c46_validation_safe_modern_complement_selection import PRED",
+      "from c49_pressure_transfer_safe_candidate_selection import candidate_alert",
+      "from c77_stress_gated_deep_boundary_enhancement import (",
+      "from pathlib import Path",
+      "import matplotlib.pyplot as plt",
+      "import numpy as np",
+      "import pandas as pd",
+      "import sys"
+    ]
+  },
+  {
+    "file": "build_stress_gated_replacement_mechanism.py",
+    "sha256": "4dae729eec77fcd9adb48846e1f9a38a8298914f59572b91172e455174682652",
+    "imports": [
+      "from __future__ import annotations",
+      "from c2_deep_severity_sequence_model import PRESSURE_MONTHS",
+      "from c43_budget_aware_boundary_correction import build_alerts, prepare_scores",
+      "from c46_validation_safe_modern_complement_selection import PRED",
+      "from c49_pressure_transfer_safe_candidate_selection import candidate_alert",
+      "from c77_stress_gated_deep_boundary_enhancement import C50, stress_gated_alert, threshold_from_validation",
+      "from pathlib import Path",
+      "import pandas as pd",
+      "import sys"
+    ]
+  },
+  {
+    "file": "c12_condition_interaction_diagnostic.py",
+    "sha256": "268517cb5b73681a5bec4551fb7b2dcff660c3e76fc82b71de57736cf955535f",
+    "imports": [
+      "from __future__ import annotations",
+      "from c2_deep_severity_sequence_model import PRESSURE_MONTHS",
+      "from c9_pressure_miss_diagnosis_and_conditioned_adjustment import BASE_SCORES, build_panel, metric_from_mask",
+      "from pathlib import Path",
+      "import numpy as np",
+      "import pandas as pd"
+    ]
+  },
+  {
+    "file": "c16_da_congestion_shape_diagnostic.py",
+    "sha256": "a34fc5ec9c3aaa00f5ca374bfd54790c08b7b946fadb7f37a2ae94b14f3d6d49",
+    "imports": [
+      "from __future__ import annotations",
+      "from c12_condition_interaction_diagnostic import add_state_features, monthly_rank",
+      "from c2_deep_severity_sequence_model import PRESSURE_MONTHS",
+      "from c9_pressure_miss_diagnosis_and_conditioned_adjustment import build_panel, metric_from_mask",
+      "from pathlib import Path",
+      "import numpy as np",
+      "import pandas as pd"
+    ]
+  },
+  {
+    "file": "c20_distributional_tail_risk_scores.py",
+    "sha256": "59b825489509bd0a5ff67cf98abffd73ec47223225a97a494603c3251f06c1f3",
+    "imports": [
+      "from __future__ import annotations",
+      "from c12_condition_interaction_diagnostic import monthly_rank",
+      "from c16_da_congestion_shape_diagnostic import add_da_congestion_shape, monthly_alert_mask",
+      "from c2_deep_severity_sequence_model import PRESSURE_MONTHS",
+      "from c6_multinode_stageb_risk_model import load_multinode_raw",
+      "from c7_pressure_conditioned_deep_ranker import feature_columns",
+      "from c9_pressure_miss_diagnosis_and_conditioned_adjustment import build_panel as build_eval_panel",
+      "from c9_pressure_miss_diagnosis_and_conditioned_adjustment import metric_from_mask",
+      "from pathlib import Path",
+      "from sklearn.ensemble import HistGradientBoostingClassifier, HistGradientBoostingRegressor, RandomForestRegressor",
+      "from sklearn.isotonic import IsotonicRegression",
+      "import glob",
+      "import numpy as np",
+      "import pandas as pd"
+    ]
+  },
+  {
+    "file": "c22_validation_safe_boundary_enhancement.py",
+    "sha256": "014ea788ba7abd2acfddacb4baa935a1306feeb40e9da818d58d63487187e562",
+    "imports": [
+      "from __future__ import annotations",
+      "from c12_condition_interaction_diagnostic import monthly_rank",
+      "from c16_da_congestion_shape_diagnostic import monthly_alert_mask",
+      "from c2_deep_severity_sequence_model import PRESSURE_MONTHS",
+      "from c9_pressure_miss_diagnosis_and_conditioned_adjustment import metric_from_mask",
+      "from pathlib import Path",
+      "import numpy as np",
+      "import pandas as pd"
+    ]
+  },
+  {
+    "file": "c27_protected_core_boundary_correction.py",
+    "sha256": "e3f94d5fcf4486e577374293cfec2bb5184fa9a6b9d69fb6b7fae3d15366e9fe",
+    "imports": [
+      "from __future__ import annotations",
+      "from c12_condition_interaction_diagnostic import monthly_rank",
+      "from c16_da_congestion_shape_diagnostic import monthly_alert_mask",
+      "from c22_validation_safe_boundary_enhancement import BONUS_FEATURE, build_base_score",
+      "from c2_deep_severity_sequence_model import PRESSURE_MONTHS",
+      "from c9_pressure_miss_diagnosis_and_conditioned_adjustment import metric_from_mask",
+      "from pathlib import Path",
+      "import numpy as np",
+      "import pandas as pd"
+    ]
+  },
+  {
+    "file": "c2_deep_severity_sequence_model.py",
+    "sha256": "2c34ca75fc4a0a0f8130aeac3aa67265ce244de231d2e765ac0d92da481b3965",
+    "imports": [
+      "from __future__ import annotations",
+      "from dataclasses import dataclass",
+      "from pathlib import Path",
+      "from sklearn.metrics import average_precision_score, roc_auc_score",
+      "from sklearn.preprocessing import StandardScaler",
+      "from torch import nn",
+      "from torch.utils.data import DataLoader, Dataset",
+      "import math",
+      "import numpy as np",
+      "import pandas as pd",
+      "import random",
+      "import torch"
+    ]
+  },
+  {
+    "file": "c31_conformalized_deep_ensemble.py",
+    "sha256": "495b063da00bbf9b99e8a46a62aeb0e26a356a2f5c547924a0fcaefd3b973ce8",
+    "imports": [
+      "from __future__ import annotations",
+      "from c12_condition_interaction_diagnostic import monthly_rank",
+      "from c16_da_congestion_shape_diagnostic import monthly_alert_mask",
+      "from c20_distributional_tail_risk_scores import EVAL_PRED, build_long_feature_panel",
+      "from c22_validation_safe_boundary_enhancement import BONUS_FEATURE, PRED as C20_FULL_PRED, build_base_score",
+      "from c27_protected_core_boundary_correction import protected_alert_mask",
+      "from c2_deep_severity_sequence_model import PRESSURE_MONTHS",
+      "from c9_pressure_miss_diagnosis_and_conditioned_adjustment import metric_from_mask",
+      "from pathlib import Path",
+      "from sklearn.isotonic import IsotonicRegression",
+      "from sklearn.preprocessing import StandardScaler",
+      "from torch import nn",
+      "from torch.utils.data import DataLoader, TensorDataset",
+      "import numpy as np",
+      "import pandas as pd",
+      "import random",
+      "import torch"
+    ]
+  },
+  {
+    "file": "c32_ssm_like_risk_sequence_baseline.py",
+    "sha256": "5eec73b78ed06d7a295dffc12439c66e89866df5f69ef5a7ae4b1c714e860d98",
+    "imports": [
+      "from __future__ import annotations",
+      "from c16_da_congestion_shape_diagnostic import monthly_alert_mask",
+      "from c20_distributional_tail_risk_scores import EVAL_PRED, build_long_feature_panel",
+      "from c22_validation_safe_boundary_enhancement import PRED as C20_FULL_PRED, build_base_score",
+      "from c2_deep_severity_sequence_model import PRESSURE_MONTHS",
+      "from c9_pressure_miss_diagnosis_and_conditioned_adjustment import metric_from_mask",
+      "from pathlib import Path",
+      "from sklearn.isotonic import IsotonicRegression",
+      "from sklearn.preprocessing import StandardScaler",
+      "from torch import nn",
+      "from torch.utils.data import DataLoader, TensorDataset",
+      "import numpy as np",
+      "import pandas as pd",
+      "import random",
+      "import torch"
+    ]
+  },
+  {
+    "file": "c33_conditional_diffusion_residual_baseline.py",
+    "sha256": "7951f89eaba7c8122edec1d2c97993c1ca4df60a215c408fee628e0ec208d535",
+    "imports": [
+      "from __future__ import annotations",
+      "from c16_da_congestion_shape_diagnostic import monthly_alert_mask",
+      "from c20_distributional_tail_risk_scores import EVAL_PRED, build_long_feature_panel",
+      "from c22_validation_safe_boundary_enhancement import PRED as C20_FULL_PRED, build_base_score",
+      "from c2_deep_severity_sequence_model import PRESSURE_MONTHS",
+      "from c9_pressure_miss_diagnosis_and_conditioned_adjustment import metric_from_mask",
+      "from pathlib import Path",
+      "from sklearn.preprocessing import StandardScaler",
+      "from torch import nn",
+      "from torch.utils.data import DataLoader, TensorDataset",
+      "import numpy as np",
+      "import pandas as pd",
+      "import random",
+      "import torch"
+    ]
+  },
+  {
+    "file": "c3_validation_safe_diversified_policy.py",
+    "sha256": "1efd887779541ee3fb1abfb9ede4ca1c44ee993df4842f25e65aca8260c58fce",
+    "imports": [
+      "from __future__ import annotations",
+      "from c2_deep_severity_sequence_model import PRESSURE_MONTHS, rank01",
+      "from pathlib import Path",
+      "import numpy as np",
+      "import pandas as pd"
+    ]
+  },
+  {
+    "file": "c43_budget_aware_boundary_correction.py",
+    "sha256": "bfe81ba542c8c2f9e81eb3fe9e1ce909a512f1dd8716b17df0e6b2d484e3f73d",
+    "imports": [
+      "from __future__ import annotations",
+      "from c12_condition_interaction_diagnostic import monthly_rank",
+      "from c22_validation_safe_boundary_enhancement import BONUS_FEATURE, build_base_score",
+      "from c2_deep_severity_sequence_model import PRESSURE_MONTHS",
+      "from c9_pressure_miss_diagnosis_and_conditioned_adjustment import metric_from_mask",
+      "from pathlib import Path",
+      "import numpy as np",
+      "import pandas as pd"
+    ]
+  },
+  {
+    "file": "c46_validation_safe_modern_complement_selection.py",
+    "sha256": "ae511bdd08708f13465ce9083121952e0658461442e989335d8a445186e95477",
+    "imports": [
+      "from __future__ import annotations",
+      "from c2_deep_severity_sequence_model import PRESSURE_MONTHS",
+      "from c43_budget_aware_boundary_correction import BUDGETS, build_alerts, eval_alert, prepare_scores",
+      "from pathlib import Path",
+      "import numpy as np",
+      "import pandas as pd"
+    ]
+  },
+  {
+    "file": "c49_pressure_transfer_safe_candidate_selection.py",
+    "sha256": "bc72fbb7bbd0731d06cd32b983de6ff26ceab34e5244f45b91277b5b31795b22",
+    "imports": [
+      "from __future__ import annotations",
+      "from c2_deep_severity_sequence_model import PRESSURE_MONTHS",
+      "from c43_budget_aware_boundary_correction import BUDGETS, build_alerts, eval_alert, prepare_scores",
+      "from c46_validation_safe_modern_complement_selection import PRED, monthly_alert_mask",
+      "from pathlib import Path",
+      "import numpy as np",
+      "import pandas as pd"
+    ]
+  },
+  {
+    "file": "c50_conservative_parsimony_selection_and_bootstrap.py",
+    "sha256": "7488e53a827ede47a56015ea26ed758447b50c8188dcb7e24a664fdd87aada97",
+    "imports": [
+      "from __future__ import annotations",
+      "from c2_deep_severity_sequence_model import PRESSURE_MONTHS",
+      "from c49_pressure_transfer_safe_candidate_selection import OUT as C49_OUT",
+      "from c49_pressure_transfer_safe_candidate_selection import PRED, candidate_alert, evaluate",
+      "from c9_pressure_miss_diagnosis_and_conditioned_adjustment import metric_from_mask",
+      "from pathlib import Path",
+      "import numpy as np",
+      "import pandas as pd"
+    ]
+  },
+  {
+    "file": "c57_baseline_metric_audit.py",
+    "sha256": "e861ff03d3f0210ca3168cfab026d22e4c7bd147e5080d9912b3dadccf21a4a3",
+    "imports": [
+      "from __future__ import annotations",
+      "from pathlib import Path",
+      "import pandas as pd"
+    ]
+  },
+  {
+    "file": "c58_stronger_modern_baseline_feasibility.py",
+    "sha256": "8a74836fa7584d80f9a21e4e17db99ba49510a66b5639c2b3cd10b4605abe35a",
+    "imports": [
+      "from __future__ import annotations",
+      "from pathlib import Path",
+      "import pandas as pd"
+    ]
+  },
+  {
+    "file": "c59_local_selective_ssm_tail_baseline.py",
+    "sha256": "ebcb191162c66eeeab97a8cd47bc51202d80a4249700c5dcf99af3a480d07b0e",
+    "imports": [
+      "from __future__ import annotations",
+      "from c12_condition_interaction_diagnostic import monthly_rank",
+      "from c16_da_congestion_shape_diagnostic import monthly_alert_mask",
+      "from c20_distributional_tail_risk_scores import EVAL_PRED, build_long_feature_panel",
+      "from c22_validation_safe_boundary_enhancement import BONUS_FEATURE, PRED as C20_FULL_PRED, build_base_score",
+      "from c2_deep_severity_sequence_model import PRESSURE_MONTHS",
+      "from c32_ssm_like_risk_sequence_baseline import add_state_features, feature_cols",
+      "from c9_pressure_miss_diagnosis_and_conditioned_adjustment import metric_from_mask",
+      "from pathlib import Path",
+      "from sklearn.isotonic import IsotonicRegression",
+      "from sklearn.preprocessing import StandardScaler",
+      "from torch import nn",
+      "from torch.utils.data import DataLoader, TensorDataset",
+      "import numpy as np",
+      "import pandas as pd",
+      "import random",
+      "import torch"
+    ]
+  },
+  {
+    "file": "c60_dilated_tcn_attention_tail_baseline.py",
+    "sha256": "d81c5ad59b9bf5314a0b0bf22770022044d674d50746da216685c70e4bb757c3",
+    "imports": [
+      "from __future__ import annotations",
+      "from c12_condition_interaction_diagnostic import monthly_rank",
+      "from c16_da_congestion_shape_diagnostic import monthly_alert_mask",
+      "from c20_distributional_tail_risk_scores import EVAL_PRED, build_long_feature_panel",
+      "from c22_validation_safe_boundary_enhancement import BONUS_FEATURE, PRED as C20_FULL_PRED, build_base_score",
+      "from c2_deep_severity_sequence_model import PRESSURE_MONTHS",
+      "from c32_ssm_like_risk_sequence_baseline import add_state_features, feature_cols",
+      "from c9_pressure_miss_diagnosis_and_conditioned_adjustment import metric_from_mask",
+      "from pathlib import Path",
+      "from sklearn.isotonic import IsotonicRegression",
+      "from sklearn.preprocessing import StandardScaler",
+      "from torch import nn",
+      "from torch.utils.data import DataLoader, TensorDataset",
+      "import numpy as np",
+      "import pandas as pd",
+      "import random",
+      "import torch"
+    ]
+  },
+  {
+    "file": "c61_pressure_aware_tcn_attention_tail_baseline.py",
+    "sha256": "b4dbf66372d845f65a28bb97bf2c45471b831a631c8b09792c54e6d44f3a8fcf",
+    "imports": [
+      "from __future__ import annotations",
+      "from c12_condition_interaction_diagnostic import monthly_rank",
+      "from c16_da_congestion_shape_diagnostic import monthly_alert_mask",
+      "from c20_distributional_tail_risk_scores import EVAL_PRED, build_long_feature_panel",
+      "from c22_validation_safe_boundary_enhancement import BONUS_FEATURE, PRED as C20_FULL_PRED, build_base_score",
+      "from c2_deep_severity_sequence_model import PRESSURE_MONTHS",
+      "from c32_ssm_like_risk_sequence_baseline import add_state_features, feature_cols",
+      "from c9_pressure_miss_diagnosis_and_conditioned_adjustment import metric_from_mask",
+      "from pathlib import Path",
+      "from sklearn.isotonic import IsotonicRegression",
+      "from sklearn.preprocessing import StandardScaler",
+      "from torch import nn",
+      "from torch.utils.data import DataLoader, TensorDataset",
+      "import numpy as np",
+      "import pandas as pd",
+      "import random",
+      "import torch"
+    ]
+  },
+  {
+    "file": "c6_multinode_stageb_risk_model.py",
+    "sha256": "aea95a1e3f9855c92396ffd21e6459f5df7b41b887bd0f764a638d0c8c5904b9",
+    "imports": [
+      "from __future__ import annotations",
+      "from c2_deep_severity_sequence_model import PRESSURE_MONTHS, rank01",
+      "from c3_validation_safe_diversified_policy import metric_from_mask",
+      "from pathlib import Path",
+      "from sklearn.ensemble import ExtraTreesClassifier, HistGradientBoostingClassifier, RandomForestClassifier",
+      "import glob",
+      "import numpy as np",
+      "import pandas as pd"
+    ]
+  },
+  {
+    "file": "c72_pre_manuscript_result_freeze_package.py",
+    "sha256": "dba27d8c4112b6930e66117759a2b8b04ad0eddb7ed35e9529b95c6ddc4e3a02",
+    "imports": [
+      "from __future__ import annotations",
+      "from pathlib import Path",
+      "import pandas as pd"
+    ]
+  },
+  {
+    "file": "c74_submission_readiness_gap_closure_package.py",
+    "sha256": "c155ac35f1a529e24f6159c3fea4dc7d343f9a949764d636f9c860125172f3ca",
+    "imports": [
+      "from __future__ import annotations",
+      "from pathlib import Path",
+      "import pandas as pd"
+    ]
+  },
+  {
+    "file": "c77_stress_gated_deep_boundary_enhancement.py",
+    "sha256": "dead0544ef40010b2123234eb7368dad982f482de635952bcec499b90c21d2dd",
+    "imports": [
+      "from __future__ import annotations",
+      "from c2_deep_severity_sequence_model import PRESSURE_MONTHS",
+      "from c43_budget_aware_boundary_correction import build_alerts, eval_alert, prepare_scores",
+      "from c46_validation_safe_modern_complement_selection import PRED, monthly_alert_mask",
+      "from c49_pressure_transfer_safe_candidate_selection import candidate_alert",
+      "from pathlib import Path",
+      "import numpy as np",
+      "import pandas as pd"
+    ]
+  },
+  {
+    "file": "c78_c77_robustness_vs_c50_audit.py",
+    "sha256": "f83ab368022aba7adcb3850b220be6ed469ac2cfc1fb0ad832855402d7553723",
+    "imports": [
+      "from __future__ import annotations",
+      "from c2_deep_severity_sequence_model import PRESSURE_MONTHS",
+      "from c43_budget_aware_boundary_correction import build_alerts, eval_alert, prepare_scores",
+      "from c46_validation_safe_modern_complement_selection import PRED",
+      "from c49_pressure_transfer_safe_candidate_selection import candidate_alert",
+      "from c77_stress_gated_deep_boundary_enhancement import (",
+      "from pathlib import Path",
+      "import numpy as np",
+      "import pandas as pd"
+    ]
+  },
+  {
+    "file": "c79_c77_paper_ready_integration.py",
+    "sha256": "b153ddaf104473479c627c1c8264e555be7bc4445f86faca5334ab771c62c825",
+    "imports": [
+      "from __future__ import annotations",
+      "from pathlib import Path",
+      "import pandas as pd"
+    ]
+  },
+  {
+    "file": "c7_pressure_conditioned_deep_ranker.py",
+    "sha256": "3fb38f9627d4c69118599a168ce9d9f2132f295cad8ef005745a528e3d3c94b4",
+    "imports": [
+      "from __future__ import annotations",
+      "from c2_deep_severity_sequence_model import PRESSURE_MONTHS, rank01",
+      "from c3_validation_safe_diversified_policy import metric_from_mask",
+      "from c6_multinode_stageb_risk_model import load_multinode_raw",
+      "from pathlib import Path",
+      "from sklearn.preprocessing import StandardScaler",
+      "from torch import nn",
+      "from torch.utils.data import DataLoader, TensorDataset",
+      "import glob",
+      "import numpy as np",
+      "import pandas as pd",
+      "import random",
+      "import torch"
+    ]
+  },
+  {
+    "file": "c80_c77_selection_leakage_and_ablation_audit.py",
+    "sha256": "1c94d1b2cd4f612b36302e7fd3f115896774d5fc41754371597d95e229c91259",
+    "imports": [
+      "from __future__ import annotations",
+      "from pathlib import Path",
+      "import pandas as pd",
+      "import re"
+    ]
+  },
+  {
+    "file": "c81_validation_only_parsimony_c77_selection.py",
+    "sha256": "a0ddfccf6d187cc07bff1346557de9408935000bcfe2f60030bfbd66ebda2440",
+    "imports": [
+      "from __future__ import annotations",
+      "from pathlib import Path",
+      "import pandas as pd"
+    ]
+  },
+  {
+    "file": "c9_pressure_miss_diagnosis_and_conditioned_adjustment.py",
+    "sha256": "34933c6dc846d6131fd16c6e2e91a9f3b08c41124f55f11d80b014bb8fc2868b",
+    "imports": [
+      "from __future__ import annotations",
+      "from c2_deep_severity_sequence_model import PRESSURE_MONTHS, rank01",
+      "from c6_multinode_stageb_risk_model import load_multinode_raw",
+      "from pathlib import Path",
+      "import numpy as np",
+      "import pandas as pd"
+    ]
+  },
+  {
+    "file": "foundation_model_mechanism_experiment_20260715.py",
+    "sha256": "b8020be2fa4c41372d21babe2b2a91e61b5e86cfd9ac9d0054c34fa9f635bd6a",
+    "imports": [
+      "from __future__ import annotations",
+      "from c20_distributional_tail_risk_scores import build_long_feature_panel",
+      "from c31_conformalized_deep_ensemble import add_features, feature_cols",
+      "from pathlib import Path",
+      "from sklearn.isotonic import IsotonicRegression",
+      "import argparse",
+      "import gc",
+      "import math",
+      "import numpy as np",
+      "import os",
+      "import pandas as pd",
+      "import torch"
+    ]
+  },
+  {
+    "file": "nyiso_method_transfer_20260610.py",
+    "sha256": "db3b3dcc1baed9607988fbc6e8ff7aba2263b09e87cf820772ceefdba93eba7a",
+    "imports": [
+      "from __future__ import annotations",
+      "from pathlib import Path",
+      "from urllib.request import urlretrieve",
+      "import math",
+      "import numpy as np",
+      "import pandas as pd",
+      "import zipfile"
+    ]
+  },
+  {
+    "file": "nyiso_pressure_slice_audit_20260615.py",
+    "sha256": "5aec7cf20419577cb173779e13507c55ee6adf86f296e721bcefdcdfd25965f2",
+    "imports": [
+      "from __future__ import annotations",
+      "from pathlib import Path",
+      "import math",
+      "import numpy as np",
+      "import pandas as pd"
+    ]
+  },
+  {
+    "file": "rebuild_model_family_inventory_20260611.py",
+    "sha256": "81e255c920dbc9f706070a3d12965ab3e6818d56fdba69cc40e835c16b2ae13c",
+    "imports": [
+      "from pathlib import Path",
+      "import numpy as np",
+      "import pandas as pd"
+    ]
+  },
+  {
+    "file": "recompute_packaged_results.py",
+    "sha256": "73a1c9e712499313cacaf5587076849e238afb911a5cd7d4263c94a9b3ad536a",
+    "imports": [
+      "from __future__ import annotations",
+      "from pathlib import Path",
+      "import csv"
+    ]
+  },
+  {
+    "file": "tpwrs_revision_20260811_nyiso_pressure_bootstrap.py",
+    "sha256": "4013b038dfb0dd38241c4021cbd66b3bf250d471ee421cf19d981845810f3c38",
+    "imports": [
+      "from __future__ import annotations",
+      "from pathlib import Path",
+      "import math",
+      "import numpy as np",
+      "import pandas as pd"
+    ]
+  },
+  {
+    "file": "tpwrs_revision_20260811_pressure_audit.py",
+    "sha256": "03b93ed1813fcccfc06391daf0291dd2790f922e9df5f4bb31b005cd3d711e46",
+    "imports": [
+      "from __future__ import annotations",
+      "from c2_deep_severity_sequence_model import PRESSURE_MONTHS",
+      "from c43_budget_aware_boundary_correction import build_alerts as build_base_alerts",
+      "from c43_budget_aware_boundary_correction import eval_alert, prepare_scores",
+      "from c46_validation_safe_modern_complement_selection import PRED",
+      "from c49_pressure_transfer_safe_candidate_selection import candidate_alert",
+      "from c77_stress_gated_deep_boundary_enhancement import (",
+      "from pathlib import Path",
+      "import numpy as np",
+      "import pandas as pd"
+    ]
+  },
+  {
+    "file": "tpwrs_revision_20260812_nyiso_clean_rebuild.py",
+    "sha256": "ff56d052a8c09161f4b91bb23519fb5d6abe4ce3124b32f9cf901593d592df6a",
+    "imports": [
+      "from __future__ import annotations",
+      "from pathlib import Path",
+      "import math",
+      "import numpy as np",
+      "import pandas as pd",
+      "import zipfile"
+    ]
+  },
+  {
+    "file": "tpwrs_revision_20260812_nyiso_frozen_normalization.py",
+    "sha256": "c8119a2e336d481ff5b9f9fb75a2e234c999994b4f79c063cce0c791fdfa1fcb",
+    "imports": [
+      "from __future__ import annotations",
+      "from pathlib import Path",
+      "import math",
+      "import numpy as np",
+      "import pandas as pd"
+    ]
+  },
+  {
+    "file": "tpwrs_revision_20260812_pressure_generalization_audit.py",
+    "sha256": "4fa43099418386c3ff11d1ee5afaf506018e1527e62d6dce4fb21c370e6c1d73",
+    "imports": [
+      "from __future__ import annotations",
+      "from pathlib import Path",
+      "import numpy as np",
+      "import pandas as pd"
+    ]
+  }
+]

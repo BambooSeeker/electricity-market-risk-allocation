@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying manuscript when using this research software."
+title: "Fixed-Budget Lower-Tail Risk Alert Allocation in Day-Ahead and Real-Time Electricity Markets"
+type: software
+license: BSD-3-Clause
+authors:
+  - family-names: Zhu
+    given-names: Jiawei
+    affiliation: Zhejiang University of Technology
+  - family-names: Hou
+    given-names: Peng
+    affiliation: Tianjin University
+  - family-names: Jin
+    given-names: Rongsen
+    affiliation: Baima Lake Laboratory
+  - family-names: Liu
+    given-names: Zeyu
+    affiliation: Tianjin University
+  - family-names: Zhang
+    given-names: Pei
+    affiliation: Tianjin University
+  - family-names: Chen
+    given-names: Zhe
+    affiliation: Aalborg University
+
+repository-code: "https://github.com/BambooSeeker/electricity-market-risk-allocation"
+url: "https://github.com/BambooSeeker/electricity-market-risk-allocation"
+version: "1.0.0"
+date-released: "2026-10-05"

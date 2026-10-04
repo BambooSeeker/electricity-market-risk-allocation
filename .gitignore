@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+data/zhejiang_demo/
+data/restricted/
+results/demo/
+results/saved_week/

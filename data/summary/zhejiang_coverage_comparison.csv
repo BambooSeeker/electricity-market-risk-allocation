@@ -1,0 +1,5 @@
+method,label,all_recall,all_excess_share,pressure_recall,pressure_excess_share
+full,Full QMLP,0.7612,0.8498,0.7007,0.7923
+core,Core QMLP,0.758,0.847,0.6984,0.7883
+hgb,HGB,0.7548,0.8313,0.6984,0.7853
+gate,Gate q60,0.7548076923,0.8324773768,0.6983758701,0.7877781

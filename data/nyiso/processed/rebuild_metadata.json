@@ -1,0 +1,10 @@
+{
+  "annual_rows": 96096,
+  "confirmation_rows": 48587,
+  "zones": 11,
+  "price_units": "USD/MWh",
+  "interval_hours": 1,
+  "forecast_rule": "Latest dated issue strictly before the delivery date",
+  "dst_rule": "Repeated local hour retained by occurrence identifier",
+  "source_score": "Archived export; optional for historical reconstruction"
+}
